@@ -1,6 +1,6 @@
-﻿namespace Simple_Contact_Manager
+﻿namespace Fixed_Bugs
 {
-    partial class frmContacts
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -45,7 +45,7 @@
             this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            this.btnAdd.Click += new System.EventHandler(this.BtnAdd_Click_1);
             // 
             // txtName
             // 
@@ -54,6 +54,7 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(154, 30);
             this.txtName.TabIndex = 1;
+            this.txtName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtName_KeyPress);
             // 
             // lstDisplay
             // 
@@ -72,6 +73,7 @@
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(154, 30);
             this.txtPhone.TabIndex = 1;
+            this.txtPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtPhone_KeyPress);
             // 
             // label1
             // 
@@ -93,7 +95,7 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Phone";
             // 
-            // frmContacts
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -104,7 +106,7 @@
             this.Controls.Add(this.txtPhone);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.btnAdd);
-            this.Name = "frmContacts";
+            this.Name = "Form1";
             this.Text = "Contact";
             this.ResumeLayout(false);
             this.PerformLayout();

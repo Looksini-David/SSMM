@@ -16,7 +16,7 @@ namespace Simple_Contact_Manager
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmContacts());
+            Application.Run(new Form());
         }
     }
 }

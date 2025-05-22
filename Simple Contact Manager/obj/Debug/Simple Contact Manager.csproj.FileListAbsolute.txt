@@ -17,3 +17,13 @@ G:\SCM-Home Work 2\Simple Contact Manager\Simple Contact Manager\obj\Debug\Simpl
 G:\SCM-Home Work 2\Simple Contact Manager\Simple Contact Manager\obj\Debug\Simple Contact Manager.csproj.CoreCompileInputs.cache
 G:\SCM-Home Work 2\Simple Contact Manager\Simple Contact Manager\obj\Debug\Simple Contact Manager.exe
 G:\SCM-Home Work 2\Simple Contact Manager\Simple Contact Manager\obj\Debug\Simple Contact Manager.pdb
+C:\Users\lenovo\Desktop\SCM-Home Work 2\Simple Contact Manager\Simple Contact Manager\obj\Debug\Simple Contact Manager.csprojAssemblyReference.cache
+C:\Users\lenovo\Desktop\SCM-Home Work 2\Simple Contact Manager\Simple Contact Manager\obj\Debug\Fixed_Bugs.Form1.resources
+C:\Users\lenovo\Desktop\SCM-Home Work 2\Simple Contact Manager\Simple Contact Manager\obj\Debug\Simple_Contact_Manager.Properties.Resources.resources
+C:\Users\lenovo\Desktop\SCM-Home Work 2\Simple Contact Manager\Simple Contact Manager\obj\Debug\Simple Contact Manager.csproj.GenerateResource.cache
+C:\Users\lenovo\Desktop\SCM-Home Work 2\Simple Contact Manager\Simple Contact Manager\obj\Debug\Simple Contact Manager.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\Desktop\SCM-Home Work 2\Simple Contact Manager\Simple Contact Manager\obj\Debug\Simple Contact Manager.exe
+C:\Users\lenovo\Desktop\SCM-Home Work 2\Simple Contact Manager\Simple Contact Manager\obj\Debug\Simple Contact Manager.pdb
+C:\Users\lenovo\Desktop\SCM-Home Work 2\Simple Contact Manager\Simple Contact Manager\bin\Debug\Simple Contact Manager.exe.config
+C:\Users\lenovo\Desktop\SCM-Home Work 2\Simple Contact Manager\Simple Contact Manager\bin\Debug\Simple Contact Manager.exe
+C:\Users\lenovo\Desktop\SCM-Home Work 2\Simple Contact Manager\Simple Contact Manager\bin\Debug\Simple Contact Manager.pdb

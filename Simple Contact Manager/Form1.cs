@@ -8,23 +8,62 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Simple_Contact_Manager
+namespace Fixed_Bugs
 {
-    public partial class frmContacts : Form
+    public partial class Form1 : Form
     {
-        public frmContacts()
+        public Form1()
         {
             InitializeComponent();
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void TxtName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Block digits from being typed
+            if (char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Numbers are not allowed in the name.");
+            }
+        }
+
+        private void TxtPhone_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Allow only digits and control keys (like backspace)
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // Block the key
+                MessageBox.Show("Only numbers are allowed in the phone number.");
+            }
+        }
+
+        private void BtnAdd_Click(object sender, EventArgs e)
         {
             string name = txtName.Text;
             string phone = txtPhone.Text;
 
             // Bug: Doesn't check if fields are empty
-            // Bug: Accepts invalid phone number
+
+            if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(phone))
+            {
+                MessageBox.Show("Enter your name and phone number!");
+                return;
+            }
+
+            // Simplified phone number validation
+            if (phone.Length != 10 || !phone.All(char.IsDigit))
+            {
+                MessageBox.Show("Phone number must be 10 digits.");
+                return;
+            }
+
+            // Add to list if validation passes
             lstDisplay.Items.Add(name + " - " + phone);
+        }
+
+        private void BtnAdd_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
