@@ -65,5 +65,28 @@ namespace Fixed_Bugs
         {
 
         }
+
+        private void BtnClear_Click(object sender, EventArgs e)
+        {
+            txtName.Clear();
+            txtPhone.Clear();
+        }
+
+        private void BtnDel_Click(object sender, EventArgs e)
+        {
+            
+                if (lstDisplay.SelectedIndex != -1)
+                {
+                    DialogResult result = MessageBox.Show("Are you sure you want to delete this contact?", "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (result == DialogResult.Yes)
+                    {
+                        lstDisplay.Items.RemoveAt(lstDisplay.SelectedIndex);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Please select a contact to delete.");
+                }
+        }
     }
 }
